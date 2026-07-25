@@ -1,0 +1,268 @@
+.hero {
+
+    min-height:100vh;
+
+    background:linear-gradient(
+            135deg,
+            #4C1D95,
+            #6C3CF0,
+            #8B5CF6
+    );
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.15);
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.left{
+
+    flex:1;
+
+}
+
+.badge{
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+    color:white;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    display:inline-block;
+
+    margin-bottom:30px;
+
+}
+
+.left h1{
+
+    font-size:70px;
+
+    color:white;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+}
+
+.left p{
+
+    font-size:22px;
+
+    color:#ECE8FF;
+
+    width:520px;
+
+    line-height:1.8;
+
+}
+
+.exploreBtn{
+
+    margin-top:40px;
+
+    border:none;
+
+    background:#F59E0B;
+
+    color:white;
+
+    padding:18px 45px;
+
+    font-size:18px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.exploreBtn:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+}
+
+.right{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+.plane{
+
+    width:650px;
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+.searchCard{
+
+    position:absolute;
+
+    right:-20px;
+
+    bottom:-20px;
+
+    width:380px;
+
+    border-radius:25px;
+
+    padding:25px;
+
+    backdrop-filter:blur(20px);
+
+    background:rgba(255,255,255,.18);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@media(max-width:1000px){
+
+    .container{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding-top:80px;
+
+    }
+
+    .left p{
+
+        width:100%;
+
+    }
+
+    .plane{
+
+        width:450px;
+
+        margin-top:50px;
+
+    }
+
+    .searchCard{
+
+        position:relative;
+
+        right:0;
+
+        bottom:0;
+
+        margin-top:30px;
+
+        width:100%;
+
+    }
+
+    .left h1{
+
+        font-size:52px;
+
+    }
+
+}
+.destinations{
+    padding:90px 8%;
+    background:#F8F7FF;
+}
+
+.sectionTitle{
+    text-align:center;
+    font-size:42px;
+    color:#4C1D95;
+    margin-bottom:12px;
+}
+
+.sectionSubtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:55px;
+    font-size:18px;
+}
+
+.destinationGrid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}

@@ -1,0 +1,232 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(
+            135deg,
+            #4c1d95,
+            #6c3cf0,
+            #8b5cf6
+    );
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+.left {
+    flex: 1;
+}
+
+.badge {
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(10px);
+
+    color: white;
+
+    margin-bottom: 30px;
+}
+
+.left h1 {
+    font-size: 72px;
+    color: white;
+    line-height: 1.1;
+}
+
+.left p {
+    margin-top: 25px;
+
+    font-size: 22px;
+
+    line-height: 1.8;
+
+    color: #ece8ff;
+
+    max-width: 560px;
+}
+
+.buttons {
+    margin-top: 45px;
+
+    display: flex;
+
+    gap: 20px;
+}
+
+.primary {
+    background: #f59e0b;
+
+    color: white;
+
+    border: none;
+
+    padding: 18px 40px;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    font-size: 17px;
+
+    transition: .3s;
+}
+
+.primary:hover {
+    transform: translateY(-6px);
+}
+
+.secondary {
+    background: transparent;
+
+    border: 2px solid white;
+
+    color: white;
+
+    padding: 18px 40px;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.secondary:hover {
+    background: white;
+    color: #6c3cf0;
+}
+
+.right {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+}
+
+.plane {
+    width: 650px;
+
+    animation: floatPlane 5s ease-in-out infinite;
+}
+
+.searchCard {
+    position: absolute;
+
+    bottom: -20px;
+
+    right: -10px;
+
+    width: 380px;
+
+    padding: 25px;
+
+    border-radius: 22px;
+
+    backdrop-filter: blur(18px);
+
+    background: rgba(255,255,255,.18);
+
+    border: 1px solid rgba(255,255,255,.25);
+
+    box-shadow: 0 20px 45px rgba(0,0,0,.25);
+}
+
+@keyframes floatPlane {
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+@media(max-width:1000px){
+
+    .container{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:80px 0;
+
+    }
+
+    .left h1{
+
+        font-size:52px;
+
+    }
+
+    .left p{
+
+        max-width:100%;
+
+    }
+
+    .buttons{
+
+        justify-content:center;
+
+    }
+
+    .plane{
+
+        width:420px;
+
+        margin-top:50px;
+
+    }
+
+    .searchCard{
+
+        position:relative;
+
+        bottom:0;
+
+        right:0;
+
+        margin-top:30px;
+
+        width:100%;
+
+    }
+
+}

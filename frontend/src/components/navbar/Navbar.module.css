@@ -1,0 +1,66 @@
+.navbar{
+    background: linear-gradient(
+            90deg,
+            #4C1D95,
+            #6C3CF0,
+            #8B5CF6
+    ) !important;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.18) !important;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px !important;
+    min-height: 70px !important;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoIcon {
+    color: #ffc107;
+    font-size: 32px !important;
+}
+
+.logo{
+
+    font-size:32px;
+
+    font-weight:800;
+
+    color:white;
+
+    letter-spacing:.5px;
+
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.link{
+
+    color:white !important;
+
+    font-size:17px !important;
+
+    font-weight:600 !important;
+
+    transition:.3s !important;
+
+}
+
+.link:hover{
+
+    color:#FFD54F !important;
+
+    transform:translateY(-2px);
+
+}

@@ -1,0 +1,31 @@
+# Ignore build output
+/target/
+
+# Ignore IDE / Editor settings
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# Ignore logs and temp files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore dependency files (optional)
+/dependency-reduced-pom.xml
+
+# Ignore Maven wrapper files (optional)
+.mvn/wrapper/maven-wrapper.jar
+
+# Ignore user-specific Maven or IntelliJ data
+/shelf/
+/workspace.xml
+/mavenHomeManager.xml
